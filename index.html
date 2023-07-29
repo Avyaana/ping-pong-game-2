@@ -1,0 +1,63 @@
+<!--created by prashant shukla-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ping Pong</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+     
+        <link rel="stylesheet" href="style.css">
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>   
+
+    </head>
+    <body background="background1.jpg">
+        <center>
+            <div class="btn btn-primary heading">
+                <h3>AI PING PONG GAME</h3>
+                <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Instructions</button>
+              </div>
+              <br> <br>
+              <button class="btn btn-success" onclick="startGame()" id="start">Start</button>
+              <br> <br>
+              <h3 id="status" class="btn btn-danger"></h3>
+              <br> <br>
+              <div id="canvas"></div>
+              <div id="game_console"></div>
+      <br> <br>
+      <title>Restart Button</title>
+   
+    <input type="reset" value="Restart" onclick="restart()">
+  
+    <div class="modal fade" id="instructions">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Instructions</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>This is the instructions for the game.</p>
+              <p>To play the game, you need to click on the "Start" button.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+            <footer class="sticky-footer">
+              <div class="container">
+                <p class="text-muted">Created by Avyaana</p>
+              </div>
+            </footer>
+          </div>
+        </div>
+      </div>
+       
+      
+        <script src="main.js"></script>
+    </body>
+</html>
